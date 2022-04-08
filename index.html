@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Understanding UX | by Narendran S</title>
+    
+    <meta name="description" content="Simple example impress.js slide show" />
+    <meta name="author" content="Henrik Ingo" />
+    <link rel="stylesheet" href="./css/github.css" />
+    <link rel="stylesheet" href="./css/mermaid.forest.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link href="./css/impress-common.css" rel="stylesheet" />
+    <link href="./css/classic-slides.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="./images/fluidicon.png" title="GitHub">
+</head>
+
+<body class="impress-not-supported">
+<!--
+    This fallback message is only visible when there is `impress-not-supported` class on body.
+-->
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<!--
+    This is the core element used by impress.js: the wrapper for your presentation steps. 
+    In this element all the impress.js magic happens.
+-->
+<div id="impress"
+    data-transition-duration="1000"
+    data-width="1920"
+    data-height="1080"
+    data-max-scale="3"
+    data-min-scale="0"
+    data-perspective="1000">
+
+    <!-- U Starts -->
+    <div class="step slide title" data-x="-2500" data-y="-1500">
+        <h1>Understanding UX</h1>
+        <h2>
+            <small>Presented by</small> <br/>
+            Narendran S
+        </h2>
+    </div>
+
+    <div class="step slide" data-x="-2500" data-y="-300">
+        <h2 class="slide-title">What is UX?</h2>
+
+        <div class="content w75">
+            The user experience (UX) is how a user interacts with and experiences a product, system or service
+        </div>
+        <figure>
+            <img src="./images/user-experience-steve-jobs.png" class="steve-jobs" alt="" />
+        </figure>
+    </div>
+
+    <div class="step slide" data-x="-2500" data-y="900">
+        <h2 class="slide-title">UX Goals</h2>
+
+        <div class="content w75">
+            User Experience (UX) is the holistic journey users traverse as they use a product. <br/><br/>
+            Not only does it include their direct interactions with the product, but also how it fits in with their overall task completion process.
+        </div>
+    </div>
+
+    <div class="step slide" data-x="-2500" data-y="2100">
+        <h2 class="slide-title">7 UX Factors</h2>
+        <div class="content">
+            The 7 Factors that Influence User Experience
+        </div>
+        <figure>
+            <img src="./images/ux-design.jpeg" class="ux-factors" alt="" />
+        </figure>
+    </div>
+
+    <div class="step slide" data-x="-1700" data-y="3300">
+        <h2 class="slide-title">1. Useful</h2>
+        <ul class="points mt40">
+            <li>User interface should provide the information or functionality that they need.</li>
+            <li>Content should be relatable to the user needs.</li>
+            <li><b>Example:</b> Amazon review interface.<br/>
+                Users rate the reviews as helpful or unhelpful. 
+                Amazon then ranks the reviews based on their helpfulness.
+            </li>
+            <!-- Stack overflow upvotes -->
+        </ul>
+    </div>
+
+    <div class="step slide" data-x="300" data-y="3300">
+        <h2 class="slide-title">2. Usable</h2>
+        <ul class="points mt40">
+            <li>Usability refers to how effectively and efficiently and intuitively users can 
+                reach the goal they are trying to achieve by using your product, 
+                service, website, etc..</li>
+            <li><b>Example:</b> Controllers for COD .<br/>
+                You can control Call of Duty using touch screen or Joy stick or Key board.
+            </li>
+        </ul>
+    </div>
+
+    <div class="step slide" data-x="2300" data-y="3300">
+        <h2 class="slide-title">3. Findable</h2>
+        <ul class="points mt40">
+            <li>Content needs to be navigable and locatable</li>
+            <li>In your products, You should match the user's knowledge of
+                how they use the system</li>
+            <li><b>Example:</b> Icons & Menu.<br/>
+                Users mostly click the hamburger icon for menu. <br/>
+                They expect the same behaviour from such icons like search, share, send, etc., as how they 
+                works in other products.
+            </li>
+        </ul>
+    </div>
+
+    <div class="step slide" data-x="3100" data-y="2100">
+        <h2 class="slide-title">4. Credible</h2>
+        <ul class="points mt40" style="width: 90%;">
+            <li>The trust of the customers on your product or service is termed as 
+                the credible factor of user experience.</li>
+            <li>You can add testimonials, portfolios or partner reference to 
+                improve the credibility of your business</li>
+            <li><b>Example:</b> Google<br/>
+                To visit a website, User can simply enter the url in the url bar. <br/>
+                However, most of the users prefer to google the site and then navigate to the site from google.
+            </li>
+        </ul>
+    </div>
+ 
+    <div class="step slide" data-x="3100" data-y="900">
+        <h2 class="slide-title">5. Accessible</h2>
+        <ul class="points mt40" style="width: 90%;">
+            <li>Providing the ability to access the product/service from wide range of controls</li>
+            <li>Making the same access to all kind of people including physically challenged.</li>
+            <li><b>Example:</b> Youtube search<br/>
+                A kid can play a song from youtube search with the audio ability provided by youtube.
+            </li>
+        </ul>
+    </div>
+
+    <div class="step slide" data-x="3100" data-y="-300">
+        <h2 class="slide-title">6. Desirable</h2>
+        <ul class="points mt40" style="width: 90%;">
+            <li>Desirabile factor refers to how much time users came back to the product/service</li>
+            <li>Desirability boosts the human emotions to hold onto a product and use it for a long time.</li>
+            <li><b>Example:</b> Apple<br/>
+                They've designed a brand that has hard-core followers who wouldn't use a PC if it was offered to them for free.
+            </li>
+        </ul>
+    </div>
+
+    <div class="step slide" data-x="3100" data-y="-1500">
+        <h2 class="slide-title">7. Valuable</h2>
+        <ul class="points mt40" style="width: 90%;">
+            <li>Valuable can be called as the 'Sum' of all the other factors.</li>
+            <li>This factor ensures that the product that you create must deliver value to the business and to the customer.</li>
+            <li>A product can provide value to different users in different ways. For some users, desirability can be more important than accessibility or vice versa.</li>
+        </ul>
+    </div>
+
+
+    <!-- 
+        X Starts 
+    -->
+    <div class="step slide centered-content slide-x" data-x="6000" data-y="-1500">
+        <h1>Know the Rules<br/>Break the Rules</h1>
+    </div>
+
+    <div class="step slide slide-x" data-x="11500" data-y="-1500">
+        <h2 class="slide-title">Know your audience</h2>
+        <ul class="points mt40" style="width: 60%;">
+            <li>User research is a natural first step in the design process.</li>
+            <li>Most probable, the people who'll use your product have different backgrounds, 
+                different mindsets, different mental models, and different goals. 
+                In other words, they are not you.</li>
+            <!-- Keep It Short and Simple, Keep It Simple and Straightforward -->
+        </ul>
+        <figure class="side-img">
+            <img src="./images/audience.png" alt="">
+        </figure>
+    </div>
+
+    <div class="step slide slide-x" data-x="10400" data-y="-300">
+        <h2 class="slide-title">Doherty Threshold</h2>
+        <ul class="points mt40" style="width: 60%;">
+            <li>Provide system feedback within 400 ms in order to keep users' attention and increase productivity.</li>
+            <li>Animation is one way to visually engage people while loading or processing is happening in the background.</li>
+            <li>There should be minimal ui changes/touch response/sounds on user interactions.</li>
+        </ul>
+        <figure class="side-img">
+            <img src="./images/doherty.png" alt="">
+        </figure>
+    </div>
+    
+    <div class="step slide slide-x" data-x="7200" data-y="-300">
+        <h2 class="slide-title">Consistency</h2>
+        <ul class="points mt40" style="width: 60%;">
+            <li>A design should always feel consistent with the internal elements 
+                within the particular design.</li>
+            <li>Consistency could be achieved through Typhography, Colors, Graphics and Animations.</li>
+        </ul>
+        <figure class="side-img" style="background: #fff;">
+            <img src="./images/consistancy.png" alt="" style="width: 400px; margin: 100px;" />
+        </figure>
+    </div>
+    
+    <div class="step slide slide-x" data-x="8800" data-y="900">
+        <h2 class="slide-title">KISS [Keep it simple, stupid]</h2>
+        <ul class="points mt40" style="width: 60%;">
+            <li>KISS, an acronym for keep it simple, stupid, is a design principle 
+                plainly highlights that simple design works better than complicated design.</li>
+            <li>Everything should be made as simple as possible, but not simpler.</li>
+            <!-- Keep It Short and Simple, Keep It Simple and Straightforward -->
+        </ul>
+        <figure class="side-img">
+            <img src="./images/keep-it-simple.png" style="width: 650px;" alt="">
+        </figure>
+    </div>
+    
+    <div class="step slide slide-x" data-x="7200" data-y="2100">
+        <h2 class="slide-title">Hick's Law</h2>
+        <ul class="points mt40" style="width: 55%;">
+            <li>The time it takes to make a decision increases with the number and complexity of choices.</li>
+            <li>Minimize choices when response times are critical to increase decision time.</li>
+            <li>Break complex tasks into smaller steps in order to decrease cognitive load.</li>
+        </ul>
+        <figure class="side-img">
+            <img src="./images/hick-law.png" style="width: 760px;" alt="">
+        </figure>
+    </div>
+    
+    <div class="step slide slide-x" data-x="6000" data-y="3300">
+        <h2 class="slide-title">Fitts's Law</h2>
+        <ul class="points mt40" style="width: 60%;">
+            <li>Make sure the target action is always easily accessible to the user.</li>
+            <li>Touch targets should be large enough for users to accurately select them. 
+                Touch targets should have ample spacing between them.</li>
+            <li>Apple recommends a minimum target size of 44x44 pixels.</li>
+        </ul>
+        <figure class="side-img">
+            <img src="./images/finger-friendly.png" style="width: 650px;" alt="">
+        </figure>
+    </div>
+    
+    <div class="step slide slide-x" data-x="10400" data-y="2100">
+        <h2 class="slide-title">Jakob's Law</h2>
+        <ul class="points mt40" style="width: 60%;">
+            <li>Users spend most of their time on other sites. 
+                This means that users prefer your site to work the same way as all the other sites they already know.</li>
+            <li>By leveraging existing mental models, 
+                we can create superior user experiences in which the users can focus 
+                on their tasks rather than on learning new models.</li>
+        </ul>
+        <figure class="side-img">
+            <img src="./images/jakobs-law.png" alt="">
+        </figure>
+    </div>
+    
+    <div class="step slide slide-x centered-content" data-x="11500" data-y="3300">
+        <h1>It's Your Turn</h1>
+    </div>
+
+    <!-- This last, empty "slide" is set to be very large using the data-scale attribute, 
+         so that it covers all the other slides you just saw. 
+         It's a common way of zooming out at the end, to show the whole presentation.
+         In CSS, we set pointer-events:none to make this slide non-clickable. 
+         It makes a difference at least for SVG content, such as the mermaid diagram. -->
+    <div id="overview" class="step" data-x="4500" data-y="1500" data-scale="10" style="pointer-events: none;">
+    </div>
+</div>
+
+<!--
+    Add navigation-ui controls
+-->
+<div id="impress-toolbar"></div>
+<div class="impress-progressbar"><div></div></div>
+<div class="impress-progress"></div>
+
+<!--
+    Reference links:
+    - https://bootcamp.uxdesign.cc/7-dimensions-of-user-experience-5936fb60cd02
+    - https://www.getfeedback.com/resources/ux/fundamental-concepts-ux/
+
+    Research: 
+    - Know your audience
+    - You are not the user
+    - Involve Your Users
+    - Keep things consistent
+    
+    - Leave Room for User Error:
+    - Consider how some search engines autocorrect for spelling; if they did not, many people would not get far in their online searches
+
+    - If error occurs, Don't block the user. Suggest other options.
+
+    https://lawsofux.com/
+    https://uxplanet.org/the-10-best-ux-laws-and-principles-7980ff22e424
+-->
+
+
+<!-- Extra modules
+     Load highlight.js, mermaid.js, markdown.js and MathJax.js from extras.
+     If you're curious about details, these are initialized in src/plugins/extras/extras.js -->
+<script type="text/javascript" src="./js/highlight.pack.js"></script>
+<script type="text/javascript" src="./js/mermaid.min.js"></script>
+<script type="text/javascript" src="./js/markdown.js"></script>
+<script type="text/javascript" src="./js/MathJax.js?config=TeX-AMS_CHTML"></script>
+<!--
+    To make all described above really work, you need to include impress.js in the page.
+    You also need to call a `impress().init()` function to initialize impress.js presentation.
+    And you should do it in the end of your document. 
+-->
+<script type="text/javascript" src="./js/impress.js"></script>
+<script>
+    var _demo = impress();
+    _demo.init();
+
+    function toggleFullScreen() {
+        if (!document.fullscreenElement) {
+            document.documentElement.requestFullscreen();
+        } else {
+            if (document.exitFullscreen) {
+            document.exitFullscreen();
+            }
+        }
+    }
+
+    document.addEventListener("keydown", function(e) {
+        if (e.key === "Enter") {
+            toggleFullScreen();
+        } else if(e.key === "O") {
+            _demo.goto( "overview" );
+        }
+    }, false);  
+ 
+</script>
+
+</body>
+</html>
